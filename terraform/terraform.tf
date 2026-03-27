@@ -1,7 +1,10 @@
 terraform {
   required_version = ">= 1.5"
 
-  backend "azurerm" {}
+  backend "azurerm" {
+    use_oidc         = true
+    use_azuread_auth = true
+  }
 
   required_providers {
     azurerm = {
