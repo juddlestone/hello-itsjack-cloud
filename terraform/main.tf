@@ -1,0 +1,22 @@
+
+module "naming" {
+  source = "Azure/naming/azurerm"
+  suffix = ["hello", "itsjack", "cloud", var.environment]
+}
+
+
+resource "azurerm_static_web_app" "main" {
+  name                = module.naming.static_web_app.name
+  resource_group_name = data.azurerm_resource_group.existing.name
+  location            = data.azurerm_resource_group.existing.location
+  sku_tier            = "Free"
+  sku_size            = "Free"
+  tags                = local.tags
+}
+
+
+# resource "azurerm_static_web_app_custom_domain" "example" {
+#   static_web_app_id = azurerm_static_web_app.main.id
+#   domain_name       = "hello.itsjack.cloud"
+#   validation_type   = "dns-txt-token"
+# }
