@@ -1,9 +1,11 @@
-name: Deploy Static WebApp
+name: Deploy Infrastructure
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'terraform/**'
 
   workflow_dispatch:
     inputs:
