@@ -12,10 +12,19 @@
 
   <div id="custom-cursor" class="cursor cursor--hidden" aria-hidden="true"></div>
 
-  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour mode">
-    <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-  </button>
+  <nav class="nav" aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li class="nav-separator" aria-hidden="true">·</li>
+      <li><a href="work.html" class="nav-link">Work</a></li>
+      <li class="nav-separator" aria-hidden="true">·</li>
+      <li><a href="mailto:jack@itsjack.cloud" class="nav-link">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour mode">
+      <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+  </nav>
 
   <main class="container">
 
@@ -28,8 +37,8 @@
         width="120"
         height="120"
       >
-      <h1>Hey, I'm Jack</h1>
-      <p class="subtitle">Dad · Husband · Platform Engineer</p>
+      <h1>Hello, I'm Jack</h1>
+      <p class="subtitle">Dad · Husband · Engineer</p>
     </header>
 
     <!-- About -->
@@ -38,36 +47,41 @@
       <h2 id="about-title" class="section-title">A bit about me</h2>
       <div class="card">
         <p>
-          I'm a platform engineer who spends most of his working hours in Azure,
-          wrangling Terraform, building CI/CD pipelines, and trying to make
-          infrastructure boring in the best possible way. If something's deployed
-          and nobody noticed — I've done my job.
+          I currently work as an Azure Platform Engineer at Littlefish, a managed
+          service provider based in Nottingham. Here I am aligned to one
+          of the groups biggest clients, working within the customers platform team itself, providing thought leadership,
+          guidance, and hands-on support to help mature their Azure estate, remove deployment friction, and deliver on their 
+          technical strategy.
         </p>
         <p>
-          Outside of work I've recently become a dad, which has been equal parts
-          terrifying and brilliant. Sleep is a distant memory, but coffee is a
-          close friend. When I do get a spare hour, you'll find me on a golf
-          course, out walking somewhere green, or quietly reading before I
-          inevitably fall asleep on the sofa.
+          I also contribute to Littlefish's internal platform initiatives, having built tools, solutions and automations
+          that both improve our own business efficiencies and processes, whilst also giving engineers in the wider business
+          access to reusable, customer agnostic tooling and scripts.
+        </p>
+        <p>
+          Outside of work, I enjoy spending time with my family and dog, being outdoors, gardening, and a good coffee and book.
+          It goes without saying, that I also spend a lot of time learning and tinkering with technology.
         </p>
       </div>
     </section>
 
     <!-- What I work with -->
     <section class="section" aria-labelledby="tech-title">
-      <p class="section-label">002 — Tech</p>
+      <p class="section-label">002 — Tech </p>
       <h2 id="tech-title" class="section-title">What I work with</h2>
       <div class="card">
         <ul class="tags" role="list">
-          <li class="tag">❤️ AI</li>
           <li class="tag">❤️ Azure</li>
           <li class="tag">❤️ Terraform</li>
           <li class="tag">❤️ Python</li>
           <li class="tag">❤️ PowerShell</li>
-          <li class="tag">GitHub</li>
+          <li class="tag">🦾 Foundry</li>
+          <li class="tag">🦾 Claude</li>
+          <li class="tag">🦾 GitHub Copilot</li>
           <li class="tag">AWS</li>
           <li class="tag">Azure DevOps</li>
           <li class="tag">Docker</li>
+          <li class="tag">GitHub</li>
         </ul>
       </div>
     </section>
@@ -84,32 +98,31 @@
           something properly once than firefight it forever.
         </p>
         <p>
-          I like working in small, collaborative teams where everyone's
-          comfortable asking questions. I'm not precious about my code and I'd
-          always rather someone challenged an approach than let something
-          questionable slip through.
+          I like working in collaborative teams where everyone's
+          comfortable asking questions and sharing knowledge, where the norm
+          is challenged and new ideas are welcomed.
         </p>
       </div>
       <div class="values-grid">
         <div class="value-item">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
           <span class="value-title">Leave it better</span>
-          <span class="value-desc">Always improve what you touch, even if it's small.</span>
+          <span class="value-desc">Can it be done better?</span>
         </div>
         <div class="value-item">
           <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <span class="value-title">Share the knowledge</span>
-          <span class="value-desc">If only one person understands it, it's a risk not a solution.</span>
+          <span class="value-title">Share knowledge</span>
+          <span class="value-desc">It benefits everyone.</span>
         </div>
         <div class="value-item">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-          <span class="value-title">Embrace change</span>
-          <span class="value-desc">The best infrastructure is the kind nobody has to think about.</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span class="value-title">Always learning</span>
+          <span class="value-desc">Sharpen the saw.</span>
         </div>
         <div class="value-item">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span class="value-title">Automate the boring</span>
-          <span class="value-desc">If you're doing it twice, it should be a pipeline.</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span class="value-title">Stay curious</span>
+          <span class="value-desc">Ask why, explore how.</span>
         </div>
       </div>
     </section>
@@ -141,7 +154,7 @@
     <hr class="divider">
 
     <footer class="footer">
-      <p>Built with nothing fancy — just HTML, CSS, and a bit of JS.</p>
+      <p>Built using the help of AI, obviously.</p>
     </footer>
 
   </main>
