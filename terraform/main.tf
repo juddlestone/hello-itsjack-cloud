@@ -8,7 +8,7 @@ module "naming" {
 resource "azurerm_static_web_app" "main" {
   name                = module.naming.static_web_app.name
   resource_group_name = data.azurerm_resource_group.existing.name
-  location            = data.azurerm_resource_group.existing.location
+  location            = "westeurope" # Static web app only available in 'westus2,centralus,eastus2,westeurope,eastasia'.
   sku_tier            = "Free"
   sku_size            = "Free"
   tags                = local.tags
