@@ -1,2 +1,2 @@
 environment = "dev"
-domain_name = "staging-hello.itsjack.cloud"
+domain_name = "dev-hello.itsjack.cloud"
