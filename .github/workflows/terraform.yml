@@ -73,8 +73,8 @@ jobs:
         with:
           name: tfplan
           path: |
-            tfplan
-            .terraform.lock.hcl
+            terraform/tfplan
+            terraform/.terraform.lock.hcl
           retention-days: 1
     
   apply:
@@ -94,6 +94,7 @@ jobs:
         uses: actions/download-artifact@v6
         with:
           name: tfplan
+          path: terraform
 
       - name: Terraform | Setup
         uses: hashicorp/setup-terraform@v3
