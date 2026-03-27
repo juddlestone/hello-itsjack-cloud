@@ -15,8 +15,8 @@ resource "azurerm_static_web_app" "main" {
 }
 
 
-# resource "azurerm_static_web_app_custom_domain" "example" {
-#   static_web_app_id = azurerm_static_web_app.main.id
-#   domain_name       = "hello.itsjack.cloud"
-#   validation_type   = "dns-txt-token"
-# }
+resource "azurerm_static_web_app_custom_domain" "example" {
+  static_web_app_id = azurerm_static_web_app.main.id
+  domain_name       = "hello.itsjack.cloud"
+  validation_type   = "cname-delegation"
+}
