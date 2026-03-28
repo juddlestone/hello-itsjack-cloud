@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Jack — Projects and work I've been involved in.">
-  <title>Jack — Work</title>
+  <title>My work 👇🏻</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/theme.js"></script>
 </head>
@@ -18,7 +18,7 @@
       <li class="nav-separator" aria-hidden="true">·</li>
       <li><a href="work.html" class="nav-link active">Work</a></li>
       <li class="nav-separator" aria-hidden="true">·</li>
-      <li><a href="mailto:jack@itsjack.cloud" class="nav-link">Contact</a></li>
+      <li><a href="mailto:hello@itsjack.cloud" class="nav-link">Contact</a></li>
     </ul>
     <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour mode">
       <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -29,42 +29,51 @@
   <main class="container">
 
     <header class="header">
-      <h1>Work</h1>
-      <p class="subtitle">Projects · Contributions · Things I've Built</p>
+      <h1>Work.</h1>
+      <p class="subtitle">Projects · Tools · Applications</p>
+      <p class="subtitle"><em>(That I can publicly speak about)</em></p>
     </header>
 
     <section class="section" aria-labelledby="project-1-title">
-      <p class="section-label">001 — Project</p>
-      <h2 id="project-1-title" class="section-title">Azure Platform Maturity</h2>
+      <p class="section-label">001 — Post Room Application</p>
+      <h2 id="project-1-title" class="section-title">Poster</h2>
       <div class="card">
         <p>
-          Embedded within a client's platform team, I led work to mature their Azure estate —
-          introducing Terraform module standards, landing zone patterns, and CI/CD pipelines
-          that reduced deployment friction and improved consistency across environments.
+          Poster was a bespoke post room web application, developed whilst I worked at a convenyancing firm, to solve the problem of
+          increasing sorting and filing times as the business grew. It allowed post room staff to drag and drop centralised scanned post, 
+          enter a file reference, which Poster would then 'post' to the relevant file in the case management system and notify the 
+          associated fee earner that they had received 'post', including a narrative entered by the postal team, such as 'Mortgage offer' received.
+        </p>
+        <p>
+          Despite the business growing and postal volume increasing, post could now be processed by just one team member, both increasing efficiency and saving costs,
+          whilst not compromising on quality or accuracy.
         </p>
       </div>
     </section>
 
     <section class="section" aria-labelledby="project-2-title">
-      <p class="section-label">002 — Project</p>
-      <h2 id="project-2-title" class="section-title">Internal Tooling & Automation</h2>
+      <p class="section-label">002 — AUM Solution</p>
+      <h2 id="project-2-title" class="section-title">'AUMaaS' - Azure Update Manager As A Service</h2>
       <div class="card">
         <p>
-          Built reusable tools and automations for Littlefish's internal teams — from
-          self-service scripts for engineers to operational dashboards. Focused on making
-          things repeatable, customer-agnostic, and easy for others to pick up.
+          Ensuring servers are patched in a timely, standardized manner is what I would consider IT bread and butter. However, in my own experience, many organizations
+          leveraging Azure struggle to achieve coverage across their estate, even when utilizing the native Azure Update Manager offering. Across customers I often saw inconsistent patch schedules, 
+          update groups with a mismatch of desired reboot behaviours and out of date corresponding documentation.
+        </p>
+        <p>
+          Whilst at Littlefish, I developed a solution for this exact problem. Leveraging Terraform, Azure Policy and PowerShell, we had a solution which could be deployed into any of our 
+          Azure customers, in hours. It provided a standardized, scalable, yet flexible approach to update management. It featured automatic documentation creation and maintenance, monitoring and alerting,
+          and also supported pre and post maintenance tasks / webhooks, so it could be extended to meet any particular needs of that customer.
         </p>
       </div>
     </section>
 
     <section class="section" aria-labelledby="project-3-title">
-      <p class="section-label">003 — Project</p>
-      <h2 id="project-3-title" class="section-title">This Website</h2>
+      <p class="section-label">003 — Project Onboarder</p>
+      <h2 id="project-3-title" class="section-title">Project Onboarder</h2>
       <div class="card">
         <p>
-          A personal site built with plain HTML, CSS, and a bit of JS — hosted on Azure
-          and deployed via Terraform. No frameworks, no build tools, just something simple
-          that does the job.
+          I think most cloud engineers are familiar with the rigmoral of onboarding new projects 
         </p>
       </div>
     </section>
