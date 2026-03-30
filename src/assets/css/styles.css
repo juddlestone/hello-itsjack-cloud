@@ -301,24 +301,41 @@ a, button, input, textarea, select {
 }
 
 .interest-item {
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
+  position: relative;
   border-radius: 4px;
-  padding: 1.25rem 1rem;
-  text-align: left;
-  transition: background-color var(--transition), border-color var(--transition);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--color-surface);
+  display: flex;
+  align-items: flex-end;
 }
 
-.interest-item .icon {
-  display: block;
-  margin-bottom: 0.5rem;
+.interest-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: grayscale(100%);
 }
 
-.interest-item span:last-child {
-  font-size: 0.8rem;
-  font-family: var(--font-mono);
-  color: var(--color-text);
-  letter-spacing: 0.02em;
+.interest-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);
+}
+
+.interest-item span {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
 }
 
 /* ---- Values grid ---- */
@@ -374,18 +391,56 @@ a, button, input, textarea, select {
 
 .footer {
   text-align: left;
-  padding: 0 0 1rem;
+  padding: 0 0 2rem;
   color: var(--color-muted);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
 }
 
-.footer a {
+.footer-top {
+  margin-bottom: 0.75rem;
+}
+
+.footer-name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.footer-role {
+  margin: 0.15rem 0 0;
+  color: var(--color-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
   color: var(--color-text);
   text-decoration: none;
   border-bottom: 1px solid var(--color-border);
   transition: border-color var(--transition);
+}
+
+.footer-links a:hover {
+  border-color: var(--color-text);
+}
+
+.footer-sep {
+  color: var(--color-muted);
+}
+
+.footer-note {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.65rem;
 }
 
 /* ---- Accessibility ---- */

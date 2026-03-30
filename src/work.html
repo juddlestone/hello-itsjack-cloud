@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Jack — Projects and work I've been involved in.">
   <title>My work 👇🏻</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/theme.js"></script>
 </head>
@@ -65,6 +66,9 @@
           Azure customers, in hours. It provided a standardized, scalable, yet flexible approach to update management. It featured automatic documentation creation and maintenance, monitoring and alerting,
           and also supported pre and post maintenance tasks / webhooks, so it could be extended to meet any particular needs of that customer.
         </p>
+        <p>
+          The capturing of update reqirements could be done through an ITSM tool, such as ServiceNow, or through a custom portal.
+        </p>
       </div>
     </section>
 
@@ -73,15 +77,31 @@
       <h2 id="project-3-title" class="section-title">Project Onboarder</h2>
       <div class="card">
         <p>
-          I think most cloud engineers are familiar with the rigmoral of onboarding new projects 
+          I think most cloud engineers are familiar with the rigmoral of onboarding new projects, creating the identities, role assignments,
+          repositories, workflows, secrets and plumbing it all together. It takes time, is often error prone and can lead to inconsistencies.
         </p>
+        <p>
+          To this problem for one of our customers, I developed a project onboarding solution, which could be templatized and deployed 
+          into any Azure environment. It would capture, which captured the requirements of the project, such as what resources they would need,
+          who needed access, and what their CI/CD requirements were. This was then used to drive the provisioning of the necessary infrastructure, identities, role assignments, repositories and workflows.
+        </p>
+        <p>
       </div>
     </section>
 
     <hr class="divider">
 
     <footer class="footer">
-      <p>Built using the help of AI, obviously.</p>
+      <div class="footer-top">
+        <p class="footer-name">Jack</p>
+        <p class="footer-role">Azure Platform Engineer</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/hello-itsjack" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="footer-sep" aria-hidden="true">&middot;</span>
+        <a href="https://www.linkedin.com/in/itsjack" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <p class="footer-note">&copy; 2026</p>
     </footer>
 
   </main>
