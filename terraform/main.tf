@@ -11,7 +11,7 @@ resource "azurerm_static_web_app" "main" {
   location            = "westeurope" # Static web app only available in 'westus2,centralus,eastus2,westeurope,eastasia'.
   sku_tier            = "Free"
   sku_size            = "Free"
-  tags                = local.tags
+  tags                = local.all_tags
 }
 
 
