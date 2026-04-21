@@ -93,13 +93,14 @@
       <h2 id="project-4-title" class="section-title">Identity Vendor</h2>
       <div class="card">
         <p>
-          To give development teams more autonomy over how they implement identity and SSO, I built a self-service identity vendor solution. Developers could submit their requirements
-          through a ServiceNow form, specifying properties like name, authentication configuration, API permissions and if it requires a federated identity or a client secret. The solution would then provision an application registration in Entra ID, configure it according to the specified requirements, and return the necessary credentials and configuration details to the developer, all without any manual intervention from the identity team.
-          If the identity vendored had a client secret, the solution would also securely store and notify the appropriate owners of upcoming expirations, and handle the rotation.
+          Working across several customer accounts, I noticed that teams that needed an app registration or SSO integration had to raise a request, wait for an internal team to action it, and then hope it was configured correctly.
+          Beyond the bottleneck, each team often ended up with slightly different setups, client secrets that nobody was tracking, and no consistent approach to governance.
         </p>
         <p>
-          The goal was to remove the bottleneck of waiting for internal teams to manually create and manage identities for teams. Rather than each team managing their own integration with Entra,
-          they received a standardised, pre-configured setup that met security and governance requirements out of the box.
+          To fix this, I built a self-service identity vendor solution we could provide to our customers. Developers could submit their requirements through a form or something like ServiceNow, specifying things like the name, authentication configuration,
+          API permissions and whether it needed a federated identity or a client secret. The solution would then provision an app registration in Entra ID, configure it to spec, and return the
+          necessary credentials securely back to the developer. If a client secret was involved, it would also handle secure storage, expiry notifications to the relevant owners, and rotation.
+          Rather than each team reinventing the wheel, they got a standardised, pre-configured setup that met security and governance requirements out of the box, without having to wait on anyone.
         </p>
       </div>
     </section>
