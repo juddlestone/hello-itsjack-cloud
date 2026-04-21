@@ -41,8 +41,8 @@
       <div class="card">
         <p>
           Poster was a bespoke post room web application, developed whilst I worked at a convenyancing firm, to solve the problem of
-          increasing sorting and filing times as the business grew. It allowed post room staff to drag and drop centralised scanned post, 
-          enter a file reference, which Poster would then 'post' to the relevant file in the case management system and notify the 
+          increasing sorting and filing times as the business grew. It allowed post room staff to drag and drop centralised scanned post,
+          enter a file reference, which Poster would then 'post' to the relevant file in the case management system and notify the
           associated fee earner that they had received 'post', including a narrative entered by the postal team, such as 'Mortgage offer' received.
         </p>
         <p>
@@ -58,11 +58,11 @@
       <div class="card">
         <p>
           Ensuring servers are patched in a timely, standardized manner is what I would consider IT bread and butter. However, in my own experience, many organizations
-          leveraging Azure struggle to achieve coverage across their estate, even when utilizing the native Azure Update Manager offering. Across customers I often saw inconsistent patch schedules, 
+          leveraging Azure struggle to achieve coverage across their estate, even when utilizing the native Azure Update Manager offering. Across customers I often saw inconsistent patch schedules,
           update groups with a mismatch of desired reboot behaviours and out of date corresponding documentation.
         </p>
         <p>
-          Whilst at Littlefish, I developed a solution for this exact problem. Leveraging Terraform, Azure Policy and PowerShell, we had a solution which could be deployed into any of our 
+          Whilst at Littlefish, I developed a solution for this exact problem. Leveraging Terraform, Azure Policy and PowerShell, we had a solution which could be deployed into any of our
           Azure customers, in hours. It provided a standardized, scalable, yet flexible approach to update management. It featured automatic documentation creation and maintenance, monitoring and alerting,
           and also supported pre and post maintenance tasks / webhooks, so it could be extended to meet any particular needs of that customer.
         </p>
@@ -85,6 +85,23 @@
           capturing the business requirements through a simple form, or ITSM tool, would then provision all the necessary resources to get a project up and running in minutes, not days.
         </p>
         <p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="project-4-title">
+      <p class="section-label">004 — Identity Vendor</p>
+      <h2 id="project-4-title" class="section-title">Identity Vendor</h2>
+      <div class="card">
+        <p>
+          Working across several customer accounts, I noticed that teams that needed an app registration or SSO integration had to raise a request, wait for an internal team to action it, and then hope it was configured correctly.
+          Beyond the bottleneck, each team often ended up with slightly different setups, client secrets that nobody was tracking, and no consistent approach to governance.
+        </p>
+        <p>
+          To fix this, I built a self-service identity vendor solution we could provide to our customers. Developers could submit their requirements through a form or something like ServiceNow, specifying things like the name, authentication configuration,
+          API permissions and whether it needed a federated identity or a client secret. The solution would then provision an app registration in Entra ID, configure it to spec, and return the
+          necessary credentials securely back to the developer. If a client secret was involved, it would also handle secure storage, expiry notifications to the relevant owners, and rotation.
+          Rather than each team reinventing the wheel, they got a standardised, pre-configured setup that met security and governance requirements out of the box, without having to wait on anyone.
+        </p>
       </div>
     </section>
 
