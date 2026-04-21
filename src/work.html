@@ -94,11 +94,11 @@
       <div class="card">
         <p>
           To give development teams more autonomy over how they implement identity and SSO, I built a self-service identity vendor solution. Developers could submit their requirements
-          through a ServiceNow form, specifying things like owners, redirect URIs, required scopes, and the type of application. Once approved, the system would automatically provision everything
-          they needed: app registrations, OIDC configuration, client secrets, and redirect URI bindings.
+          through a ServiceNow form, specifying properties like name, authentication configuration, API permissions and if it requires a federated identity or a client secret. The solution would then provision an application registration in Entra ID, configure it according to the specified requirements, and return the necessary credentials and configuration details to the developer, all without any manual intervention from the identity team.
+          If the identity vendored had a client secret, the solution would also securely store and notify the appropriate owners of upcoming expirations, and handle the rotation.
         </p>
         <p>
-          The goal was to remove the bottleneck of manual identity configuration while enforcing consistency. Rather than each team rolling their own integration with Entra,
+          The goal was to remove the bottleneck of waiting for internal teams to manually create and manage identities for teams. Rather than each team managing their own integration with Entra,
           they received a standardised, pre-configured setup that met security and governance requirements out of the box.
         </p>
       </div>
